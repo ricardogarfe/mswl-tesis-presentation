@@ -1,4 +1,4 @@
-# Presentación Tesis
+# Presentación Tesis [![Build Status](https://travis-ci.org/ricardogarfe/mswl-tesis-presentation.png?branch=master)](https://travis-ci.org/ricardogarfe/mswl-tesis-presentation)
 
 Presentación de la Tesis/Trabajo Final de Master **TFM** del [Master de Libre Software](http://master.libresoft.es/) en la [Universidad Rey Juan Carlos](http://www.urjc.es/).
 
