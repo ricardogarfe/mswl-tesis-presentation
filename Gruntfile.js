@@ -158,4 +158,6 @@ module.exports = function(grunt) {
 	// Run tests
 	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
 
+  // Publish to gh-pages branch
+  grunt.registerTask( 'publish', ['test', 'gh-pages']);
 };
