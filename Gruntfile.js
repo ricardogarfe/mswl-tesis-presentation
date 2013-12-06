@@ -125,7 +125,7 @@ module.exports = function(grunt) {
   'gh-pages': {
     options: {
       base: '.',
-      message: 'gh-pages publish commit.'
+      add: true
     },
     src: '**/*'
   }
