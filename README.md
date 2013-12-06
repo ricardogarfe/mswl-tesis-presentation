@@ -4,13 +4,24 @@ Presentación de la Tesis/Trabajo Final de Master **TFM** del [Master de Libre S
 
 **ALM Tools y el proceso de desarrollo de Software de Calidad**
 
-### revealjs
+### Requisitos
 
-A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
+La presentación ha sido desarrollada con *revealjs* un framework javascript para presentaciones HTML [Check out the live demo](http://lab.hakim.se/reveal-js/).
+
+Es una herramienta FLOSS (Free Libre Open Source Software).
+
+Se ha integrado en el servidor Travis-ci para el compilado mediante los test de integración utilizando node.js y grunt.js.
+
+```shell
+$ sudo apt-get install nodejs
+$ npm install
+$ npm install -g grunt-cli
+$ grunt test
+```
 
 ## Diapositivas
 
-**TBC**
+La presentación está disponible en la página de Github asociada al repositorio [mswl-tesis-presentation](http://ricardogarfe.github.io/mswl-tesis-presentation).
 
 ## Licencia GPLv3
 
