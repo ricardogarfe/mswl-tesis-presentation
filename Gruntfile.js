@@ -107,28 +107,28 @@ module.exports = function(grunt) {
 			}
 		},
 
-  /**
-   * Given the following directory structure:
-   *
-   *   build/
-   *     index.html
-   *     js/
-   *       site.js
-   *
-   * The task below will create a `gh-pages` branch that looks like this:
-   *
-   *   index.html
-   *   js/
-   *     site.js
-   *
-   */
-  'gh-pages': {
-    options: {
-      base: '.',
-      message: 'gh-pages publish commit.'
-    },
-    src: '**/*'
-  }
+		/**
+		* Given the following directory structure:
+		*
+		*   build/
+		*     index.html
+		*     js/
+		*       site.js
+		*
+		* The task below will create a `gh-pages` branch that looks like this:
+		*
+		*   index.html
+		*   js/
+		*     site.js
+		*
+		*/
+		'gh-pages': {
+			options: {
+				base: '.',
+				add: true
+			},
+				src: '**/*'
+		}
 
 	});
 
