@@ -425,16 +425,20 @@
 						<h2>Puppet</h2>
 
 						<pre><code data-trim contenteditable>
-class {'apache':  }
-...
-apache::vhost { 'www.example.com':
-    priority        => '10',
-    vhost_name      => '192.0.2.1',
-    port            => '80',
-    docroot         => '/home/www.example.com/docroot/',
-    logroot         => '/srv/www.example.com/logroot/',
-    serveradmin     => 'webmaster@example.com',
-    serveraliases   => ['example.com',],
+exec { "apt-update":
+    command => "/usr/bin/apt-get update",
+}
+class { "scstack":
+    # Superadmin password. Will be used to access the SidelabCode Stack Console *******
+    sadminpass => "*******",
+    # Or whatever IP specified in Vagrantfile
+    ip => "192.168.33.10", 
+    domain => "sidelabcode.scstack.org",
+    baseDN => "dc=sidelabcode,dc=scstack,dc=org",
+    # Your company/organization name
+    compname => "SidelabCode Stack version 0.4",
+    # A name to be displayed within Redmine
+    codename => "SCStack ALM Tools",
 }
 						</code></pre>
 						<aside class="notes">
@@ -456,6 +460,10 @@ apache::vhost { 'www.example.com':
 
 					<section>
 						<h2>Vagrant</h2>
+						<p>Inicio</p>
+						<pre><code data-trim contenteditable>
+							$ vagrant init
+						</code></pre>
 						<p>Configuración</p>
 						<pre><code data-trim contenteditable>
 config.vm.box = "precise64"
@@ -464,7 +472,7 @@ config.vm.provision :puppet, :module_path => "modules"
 						</code></pre>
 						<p>Arranque</p>
 						<pre><code data-trim contenteditable>
-							$ vagrant init
+							$ vagrant up
 						</code></pre>
 						<aside class="notes">
 							<p>
@@ -481,7 +489,44 @@ config.vm.provision :puppet, :module_path => "modules"
 				<section>
 					<section>
 						<h2>¿ Hemos llegado ya ?</h2>
-						<p>Donde estamos... objetivos cumplidos...</p>
+
+						<p>El proyecto gira en torno a un objetivo conciso:</p>
+
+						<blockquote>
+							&ldquo;Crear un marco de trabajo para Integrar el uso de la metodología Iterativa e Incremental a través de las herramientas necesarias&ldquo;
+						</blockquote>
+
+
+						<aside class="notes">
+
+							<p>
+								A partir de la definición de la metodología Iterativa e Incremental se trasladan los requerimientos de la misma como parte inicial del proyecto para plasmarlos dibujando el camino deseado a seguir.
+							</p>
+
+							<p>
+								Se han incluido las herramientas necesarias dentro del proyecto SCStack además de su integración dentro del flujo de trabajo y su comunicación entre las mismas dentro del entorno SCStack. Unificando un proceso de desarrollo que aglutina a todos los componentes involucrados mediante la configuración y la rápida disponibilidad de las herramientas para el uso la forja creando un marco de trabajo.
+							</p>
+
+							<p>
+								Acto seguido se traza el camino a seguir para introducir la metodología en el mismo proceso de desarrollo utilizando las cualidades de cada una de las herramientas. Se localizan y gestionan los recursos necesarios para crear el marco de trabajo Iterativo e Incremental.
+							</p>
+
+							<p>
+								Documentando el proceso de desarrollo para que a través del marco de trabajo creado se facilita su integración y uso por parte de los actores implicados.
+							</p>
+
+							<p>
+								Por último se ha comprobado a través de casos reales el correcto funcionamiento de los requerimientos del proceso de desarrollo a través de SCStack.
+							</p>
+							<p>
+								Además de dotar a la forja de un potente sistema de inicialización y configuración a través de Puppet, permitiendo futuras incorporaciones, actualizaciones o sustituciones de módulos que pueden aportar mejoras a la herramienta.
+							</p>
+
+						</aside>
+						
+						<p>
+							Se ha conseguido integrar de forma satisfactoria el proceso de desarrollo Iterativo e Incremental en el marco de trabajo de SCStack
+						</p>
 					</section>
 
 					<section>
