@@ -7,7 +7,7 @@
 		<title>reveal.js - The HTML Presentation Framework</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Ricardo García Fernández">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -38,11 +38,16 @@
 			<div class="slides">
 
 				<section>
+					<h2>Hola, mi nombre es</h2>
+
+					<p>
+						<small><a href="http://mastersfwlurjc.blogspot.com.es/">Ricardo García Fernández</a> / <a href="http://twitter.com/ricardogarfe">@ricardogarfe</a></small>
+					</p>
+				</section>
+
+				<section>
 					<h1>PDIITSCStack</h1>
 					<h3>Proceso de Desarrollo Iterativo e Incremental a través de SidelabCode Stack</h3>
-					<p class="fragment">
-						<small><strong>Autor: </strong><a href="http://mastersfwlurjc.blogspot.com.es/">Ricardo García Fernández</a> / <a href="http://twitter.com/ricardogarfe">@ricardogarfe</a></small>
-					</p>
 					<p class="fragment">
 						<small><strong>Tutores:</strong></small>
 					</p>
@@ -52,13 +57,47 @@
 					<p class="fragment">
 						<small>Micael Gallego Carrillo</small>
 					</p>
+					<p><small>This work by Ricardo Gracía Fernández - ricardogarfe [at] gmail [dot] com is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</small></p>
+					<img src="img/by.png" width="100">
 				</section>
-
 				<section>
-					<h2>Que, porqué y para qué</h2>
-					<aside class="notes">
-						El desarrollo de este proyecto se basa en el diseño e implementación del proceso de desarrollo acorde con las metodologías ágiles a través de la forja SidelabCode Stack. Unificando el comportamiento de las herramientas a través de las distintas APIs basadas en la interoperabilidad, facilitando la instalación, la replicación y la recuperación de los datos mediante el uso de Software Libre para construir Software de calidad.
-					</aside>
+
+					<section>
+						<h2>Que, porqué y para qué</h2>
+						<aside class="notes">
+							¿ Que es sideladCodeStack ?
+							SCStack una forja de Desarrollo, un ALM Tool para controlar el ciclo de vida de una aplicación.
+							¿ Por qué aparece ?
+							Por la necesidad de centrar la atención en el desarrollo facilitando la composición del entorno estableciendo unas herramientas para guiar el proceso con buenas prácticas.
+							¿ Para que sirve ?
+							Para ayudar a construir software dentro de un entorno controlado que facilita la evolución del mismo siguiendo unas pautas.
+
+							El desarrollo de este proyecto se basa en el diseño e implementación del proceso de desarrollo acorde con las metodologías ágiles a través de la forja SidelabCode Stack. Unificando el comportamiento de las herramientas a través de las distintas APIs basadas en la interoperabilidad, facilitando la instalación, la replicación y la recuperación de los datos mediante el uso de Software Libre para construir Software de calidad.
+						</aside>
+					</section>
+
+					<section>
+						<h3>¿ Que es sideladCodeStack ?</h3>
+							<aside class="notes">
+								¿ Que es sideladCodeStack ?
+								SCStack una forja de Desarrollo, un ALM Tool para controlar el ciclo de vida de una aplicación.
+							</aside>
+					</section>
+					<section>
+						<h3>¿ Por qué aparece ?</h3>
+							<aside class="notes">
+								¿ Por qué aparece ?
+								Por la necesidad de centrar la atención en el desarrollo facilitando la composición del entorno estableciendo unas herramientas para guiar el proceso con buenas prácticas.
+							</aside>
+
+					</section>
+					<section>
+						<h3>¿ Para que sirve ?</h3>
+							<aside class="notes">
+								¿ Para que sirve ?
+								Para ayudar a construir software dentro de un entorno controlado que facilita la evolución del mismo siguiendo unas pautas.
+							</aside>
+					</section>
 				</section>
 
 				<section>
@@ -79,9 +118,9 @@
 					</section>
 
 					<section>
-						<h3>Basarnos en metodologías</h3>
+						<h3>Metodologías y Procesos</h3>
 						<p>
-							Dejarnos guiar por las metodologías existentes y poder adaptarlas a nuestras necesidades.
+							Dejarnos guiar por las metodologías existentes ayudados por los proceso para poder adaptarlos a nuestras necesidades.
 						</p>
 					</section>
 
@@ -99,9 +138,9 @@
 
 					<section>
 						<h3>Objetivo tangible</h3>
-						<p>
-							Facilitar la consecución de estos objetivos.
-						</p>
+						<blockquote>
+							&ldquo;Done is better than perfect&ldquo;
+						</blockquote>
 					</section>
 
  				</section>
@@ -110,9 +149,15 @@
 					<h2>Requisitos</h2>
 				</section>
 
-				<section>
+				<section data-transition="linear" data-background="green" data-background-transition="slide">
 					<h2>Metodologías</h2>
-					<p>Catalizadores...</p>
+					<p>Ágiles: Scrum, Lean, etc...</p>
+					<img width="900" src="img/dev_graphs_agilemethodologies.jpg">
+				</section>
+
+				<section data-transition="linear" data-background="brown" data-background-transition="slide">
+					<h2>Procesos</h2>
+					<p>Actúan de Catalizadores</p>
 					<ul>
 					<li class="fragment">
 						TDD
@@ -124,6 +169,11 @@
 						CD
 					</li>
 					</ul>
+					<aside class="notes">
+					TDD - Proceso de desarrollo basado en pruebas.
+					CI - Integraciones automáticas de un proyecto lo más a menudo posible para así poder detectar fallos cuanto antes (Fowler).
+					CD - Continuous Delivery - Proceso para automatizar y mejorar el proceso de despliegue diferentes entornos.
+					</aside>
 				</section>
 
 				<section>
@@ -166,9 +216,6 @@
 						<p>
 							tres secciones verticales...<a href="#" class="navigate-down">down</a>.
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
 					<section>
 						<h2>Arquitectura</h2>
@@ -186,9 +233,6 @@
 					<section>
 						<h2>Desarrollador</h2>
 						<p>Si no hay desarrollador no hay proyecto...</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
 					</section>
 				</section>
 
