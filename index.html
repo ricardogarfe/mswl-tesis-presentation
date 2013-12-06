@@ -153,7 +153,7 @@
 					<section>
 						<h2>Iterativa e Incremental</h2>
 						<!--<p>Desarrollo por ramas</p>-->
-						<img width="900" src="img/800px-Agile_Project_Management_by_Planbox.png">
+						<img class="stretch" src="img/800px-Agile_Project_Management_by_Planbox.png">
 					</section>
 				</section>
 
@@ -165,7 +165,7 @@
 
 					<section>
 						<h3>TDD</h3>
-						<img src="img/TDD-Diagram.png">
+						<img class="stretch" src="img/TDD-Diagram.png">
 						<aside class="notes">
 						TDD - Proceso de desarrollo basado en pruebas.
 						</aside>
@@ -173,7 +173,7 @@
 
 					<section>
 						<h3>Continuous Integration</h3>
-						<img src="img/branchmangement.gif">
+						<img class="stretch" src="img/branchmangement.gif">
 						<aside class="notes">
 						CI - Integraciones automáticas de un proyecto lo más a menudo posible para así poder detectar fallos cuanto antes (Fowler).
 						</aside>
@@ -181,7 +181,7 @@
 
 					<section>
 						<h3>Continuous Delivery & Deployment</h3>
-						<img width="900" src="img/Continuous_Delivery_Continuous_Deployment.jpg">
+						<img class="stretch" src="img/Continuous_Delivery_Continuous_Deployment.jpg">
 						<aside class="notes">
 						CD - Continuous Delivery - Proceso para automatizar y mejorar el proceso de despliegue diferentes entornos.
 						</aside>
@@ -190,32 +190,120 @@
 
 				<section data-transition="linear" data-background="#38608c" data-background-transition="slide">
 					<h2>Herramientas</h2>
-					<p>Poner nombre a las cosas</p>
-
+					<p>Convertir los requerimientos en objetivos reales para <q>&ldquo;poner nombre a las cosas&ldquo;</q></p>
+					<ul>
+						<li class="fragment fade-out">Gestión de usuarios, permisos y roles</li>
+						<li class="fragment roll-in">OpenLDAP</li>
+						<li class="fragment fade-out">ITS - Gestor de tareas</li>
+						<li class="fragment roll-in">Redmine</li>
+						<li class="fragment fade-out">Repositorio de código</li>
+						<li class="fragment roll-in">Git</li>
+						<li class="fragment fade-out">Revisión de código</li>
+						<li class="fragment roll-in">Gerrit</li>
+						<li class="fragment fade-out">Gestión de librerías</li>
+						<li class="fragment roll-in">Archiva</li>
+						<li class="fragment fade-out">Gestión de la integración y despliegues</li>
+						<li class="fragment roll-in">Jenkins</li>
+					</ul>
+					<aside class="notes">
+					Se ha hecho un análisis con respecto a los requerimientos basados en todo proceso de desarrollo de software......
+					</aside>
 				</section>
 
 				<section>
 					<h2>¿ Se puede unificar ?</h2>
-					<img src="img/cajon-desastre.jpg">
+					<img class="stretch" src="img/cajon-desastre.jpg">
 				</section>
 
 				<section>
-					<h2>ALM Tools</h2>
-					<h3>Aparece un nuevo compañero...</h3>
-					<p>Significado...</p>
+					<h2>Un nuevo compañero</h2>
+					<h3>Las herramientas ALM</h3>
+					<p><em>Application Lifecycle Management</em> Encargada de la gestión del ciclo de vida de una aplicación</p>
+					<img class="stretch" src="img/alm.png">
+					<aside class="notes">
+						La necesidad de tener un esqueleto para el desarrollo de un proyecto a través del uso de herramientas de Software Libre.
+					</aside>
 				</section>
 
 				<section>
-					<h2>Forjas</h2>
-					<h3>Nube de forjas, lista, etc, diapositivas verticales...</h3>
-					<p>Explayarse y comparativa</p>
+					<section>
+						<h2>Forjas de Desarrollo</h2>
+						<h3>Entorno de desarrollo colaborativo de Software</h3>
+						<p>
+							Crear un sistema modular que permita integrar estas herramientas del ciclo de vida de un proyecto como vehículo en la forja de desarrollo.
+						</p>
+					</section>
+
+					<section>
+						<h3>Nube de forjas</h3>
+						<img class="stretch" src="img/forjas-comparativa.png">
+						<aside class="notes">
+							Nube de forjas, lista, etc, diapositivas verticales...
+							Partiendo del principio DRY <em>(Don’t Repeat Yourself)</em> y de la mano de <em>No reinventar la rueda</em> se analizaron las forjas ALM existentes.
+						</aside>
+					</section>
+
+					<section>
+						<h3>Análsis 1a iteración</h3>
+						<p>
+							Requisitos para adapatar el proceso Iterativo e Incremental:
+						</p>						
+						<ul>
+							<li>FLOSS</li>
+							<li>ITS</li>
+							<li>Repositorios privados y públicos</li>
+							<li>Entorno en un servidor propio</li>
+							<li>Desarrollo</li>
+							<li>Modularizado</li>
+							<li>Iterconexiones</li>
+						</ul>
+						<aside class="notes">
+							Github, Bitbucket, Collab.net, Cloudbees, Plan.io, ClinkerHQ, Google Code, Fedora Hosted, BerliOS, Gitorius, GNU Savannah, Gna!, CodePlex, CodeHaus, CloudForge, caen eliminadas para una posible solución.
+						</aside>
+
+					</section>
+					<section>
+						<h3>Análsis 2a iteración</h3>
+
+						<p>Requisitos para adapatar el proceso Iterativo e Incremental:</p>
+						<ul>
+							<li>Wiki</li>
+							<li>FTP</li>
+							<li>Code-review</li>
+						</ul>
+
+						<aside class="notes">
+							Alioth y GitlabHQ se descartan.
+							En el último escalafón tenemos a GForge que en 2009 pasó a ser FusiónForge.	FusionForge no soportaba repositorios distribuidos como es el caso de Git en sus primeras versiones.
+						</aside>
+
+					</section>
+					<section>
+						<h3>Resultados</h3>
+
+						<p>
+							El análisis generó la necesidad de crear una forja de desarrollo Libre y usable en distintos entornos.
+						</p>
+
+						<aside class="notes">
+							Después de haber analizado las soluciones existentes, se encontraron soluciones privadas o con pocos recursos, por lo que se reafirma la opción construir una forja de desarrollo FLOSS que integre el proceso Iterativo e Incremental, desde la recogida de los requerimientos (ITS) hasta la construcción de la solución (sistema de construcción integrado).
+						</aside>
+					</section>
+
+
 				</section>
 
 				<section>
 					<h2>SCStack</h2>
 					<h3>Nueva rueda FLOSS</h3>
-					<img src="img/stackstorage002.jpg">
-					<p>Necesidad de...</p>
+					<img class="stretch" src="img/stackstorage002.jpg">
+					<p>
+						El conjunto de herramientas apiladas y conectadas que dan forma a la Forja.
+					</p>
+					<aside class="notes">
+						Tras analizar las soluciones ALM existentes se optó por crear una nueva Forja a partir de las herramientas necesarias para el proceso de desarrollo de Software de Calidad para adaptar la metodología ágil iterativa e incremental.
+						Para facilitar y unificar el proceso de desarrollo se optó por crear una herramienta que aglutinase la gestión de las tareas, el código fuente y la orientación del desarrollo a los tests.
+					</aside>
 				</section>
 
 				<section>
