@@ -124,7 +124,8 @@ module.exports = function(grunt) {
 		*/
 		'gh-pages': {
 			options: {
-				base: '.'
+				base: '.',
+				add: true
 			},
 				src: '**/*'
 		}
