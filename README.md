@@ -38,9 +38,15 @@ Para arrancar en localhost se ha arrancar el servidor con `grunt` (después de h
 $ grunt serve
 ```
 
+Acceder a la url `http://localhost:8000`.
+
 ## Diapositivas
 
 La presentación está disponible en la página de Github asociada al repositorio [mswl-tesis-presentation](http://ricardogarfe.github.io/mswl-tesis-presentation).
+
+### Notas de pie de página
+
+Usar la tecla *s* del teclado para mostar las diapositivas junto a las notas de pie de página.
 
 ## Licencia GPLv3
 
