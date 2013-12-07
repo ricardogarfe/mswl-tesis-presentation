@@ -239,7 +239,7 @@
 						</blockquote>
 						<aside class="notes">
 							<p>
-								... la metodología iterativa e incremental. Podemos abstraer de la definición de Divide y Vencerás que para resolver un problema difícil, dividiéndolo en partes más simples tantas veces como sea necesario, hasta que la resolución de las partes se torna obvia.
+								... la metodología iterativa e incremental. Podemos abstraer de la definición de Divide y Vencerás que para resolver un problema difícil, si se divide en partes más simples, tantas veces como sea necesario, la resolución de cada una de las partes se torna obvia.
 							</p>
 						</aside>
 					</section>
@@ -253,7 +253,15 @@
 						</p>
 						<aside class="notes">
 							<p>
-								Como refleja el imagen, sin entrar mucho en detalle: la solución va desmenuzando los requisitos en pequeñas entregas de un producto funcional que se rige por ciclos cortos de desarrollo, minimizando el problema para facilitar la solución.
+								Como refleja el imagen, sin entrar mucho en detalle: 
+								<ul>
+									<li>la solución va desmenuzando los requisitos - Backlog</li>
+									<li>en pequeñas entregas de un producto - Incrementos</li>
+									<li>divido en ciclos cortos de desarrollo - Iteraciones</li>
+								</ul>
+							</p>
+							<p>
+								minimizando el problema para facilitar la solución
 							</p>
 						</aside>
 					</section>
@@ -313,7 +321,7 @@
 						</p>
 						<aside class="notes">
 							<p>
-								El Proceso de Integración Continua automatiza la integración de un proyecto lo más a menudo posible, para así poder detectar fallos cuanto antes dentro del marco del desarrollo de funcionalidades por ramas.
+								El Proceso de Integración Continua automatiza la integración de un proyecto lo más a menudo posible, para así poder detectar fallos dentro del marco del desarrollo de funcionalidades por ramas.
 							</p>
 						</aside>
 					</section>
@@ -326,7 +334,7 @@
 						</p>
 						<aside class="notes">
 							<p>
-								El Proceso de Entrega y Despliegue Continuo automatiza y mejora el proceso de entregas y despliegues en diferentes entornos agilizando y mejorando en cada iteración completada en el desarrollo del proyecto.
+								El Proceso de Entrega y Despliegue Continuo automatiza y mejora el proceso de entregas y despliegues en diferentes entornos, agilizando y mejorando en cada iteración completada en el desarrollo del proyecto.
 							</p>
 						</aside>
 					</section>
@@ -351,7 +359,7 @@
 					</ul>
 					<aside class="notes">
 						<p>
-							Se ha hecho un análisis con respecto a los requerimientos basados en todo proceso de desarrollo de software para la elección de cada una de las herramientas en base a los requerimientos para representar la metodología Iterativa e Incremental (no nos dentendremos en un análisis profundo).
+							Se ha hecho un análisis con respecto a los requerimientos basados en el proceso de desarrollo de software con el objetivo de la elección de las herramientas indicadas para adaptar la metodología Iterativa e Incremental (no nos dentendremos en un análisis profundo).
 						</p>
 					</aside>
 				</section>
@@ -364,10 +372,10 @@
 							Esta imagen es bastante reconocible para todos, algunos tenemos un cajón lleno de cables, como es el caso, otros como yo lleno de mecheros e incluso un cubo lleno de cachibaches electrónicos que tengo etiquetado como <em>caja de cosas eléctricas</em>.
 						</p>
 						<p>
-							En donde después se hace imposible buscar nada y mucho menos dejar en el mismo sitio algo que hayamos cogido, por lo general acabamos buscando como si fuese el bolsillo de doraemon a ver que podemos sacar,
+							En donde después se hace imposible buscar nada y mucho menos dejar en el mismo sitio algo que hayamos cogido. Por lo general acabamos buscando como si fuese el bolsillo de doraemon a ver que podemos sacar,
 						</p>
 						<p>
-							No queremos que pase lo mismo con las herramientas que utilizamos, necesitamos saber donde está cada una, como se accede a ella, como sacarle el mayor partido que no cueste una eternidad encontrarla, ponerla en funcionamiento y volver a dejarla en el limbo.
+							No queremos que pase lo mismo con las herramientas que utilizamos. Necesitamos saber donde está cada una, como se accede a ella, como sacarle el mayor partido, ponerla en funcionamiento y volver a dejarla en el limbo.
 						</p>
 					</aside>
 
@@ -480,10 +488,7 @@
 					</p>
 					<aside class="notes">
 						<p>
-							Tras analizar las soluciones ALM existentes se optó por crear una nueva Forja a partir de las herramientas existentes para el proceso de desarrollo de Software de Calidad adaptando la metodología ágil iterativa e incremental.
-						</p>
-						<p>
-							Para facilitar y unificar el proceso de desarrollo se optó por crear una herramienta que aglutinase la gestión de las tareas, el código fuente, la orientación del desarrollo a los tests la integración continua y las entregas y despliegues continuos.
+							SCStack aglutina la gestión de las tareas, el código fuente, la orientación del desarrollo a los tests la integración, las entregas y despliegues continuos.
 						</p>
 					</aside>
 				</section>
@@ -619,7 +624,7 @@ config.vm.provision :puppet, :module_path => "modules"
 								Vagrant proporciona la gestión de los entornos de desarrollo sobre máquinas virtuales, ligeras, sencillas y replicables. Existe un repositorio de imágenes de virtuales preparadas para Vagrant que se han de instalar la máquina del desarrollador con un simple comando.
 							</p>
 							<p>
-								Se puede afirmar que Vagrant es la navaja suiza para las pruebas en este proyecto. A través de Vagrant se define el sistema operativo a instalar, la capacidad de la máquina y lo más importante: el \textbf{provisionador}, en nuestro caso Puppet y el módulo SidelabCode Stack.
+								Se puede afirmar que Vagrant es la navaja suiza para las pruebas en este proyecto. A través de Vagrant se define el sistema operativo a instalar, la capacidad de la máquina y lo más importante: el provisionador, en nuestro caso Puppet y el módulo SidelabCode Stack.
 							</p>
 						</aside>
 					</section>
