@@ -512,14 +512,17 @@
 					</section>
 					<section>
 						<h2>Desarrollador</h2>
-						<img src="img/logos/eclipse.png">
+						<img src="img/logos/STS.png">
 						<p>Si no hay desarrollador no hay proyecto...</p>
 						<aside class="notes">
 							<p>
-								El IDE Eclipse se utiliza como puerta de acceso a SidelabCodeStack por parte de los desarrolladores.
+								El IDE STS se basa en un Eclipse. Se utiliza como puerta de acceso a SidelabCodeStack por parte de los desarrolladores.
 							</p>
 							<p>
-								Enlaza el trabajo de cada uno con las herramientas disponbibles a través de la conexión con el repositorio de código Git.
+								Enlaza el trabajo de cada uno con las herramientas disponbibles a través de la conexión con el repositorio de código Git como puerta centralizadora del proceso.
+							</p>
+							<p>
+								Del que veremos la foto completa
 							</p>
 						</aside>
 					</section>
@@ -527,7 +530,18 @@
 						<h2>Más vale una imagen...</h2>
 						<img class="stretch" src="img/scstack-diagram.png">
 						<aside class="notes">
-							Esta imagen representa la foto de familia del conjunto de actores dentro de la arquitectura de SCStack.
+							<p>
+								Esta imagen representa la foto completa del conjunto de actores dentro de la arquitectura de SCStack.
+							</p>
+							<p>
+								Podemos observar el ciclo de vida de la aplicación desde que:
+								<ul>
+									<li>Creación el proyecto desde la consola de administración, usuarios, permisos, roles, repositorio, </li>
+									<li>Usuario que accede al nuevo proyecto de Redmine en donde se describen y agrupan los requerimientos a publicar en la siguiente iteración,</li>
+									<li>Usuario encargado de la tarea accede al reposiorio git a través de eclipse, desarrolla, prueba, commit y un push a la rama definida,</li>
+									<li>Jenkins integra esa rama en la de desarrollo por las pruebas de integración y se encarga de hacer el despliegue del contenido si ha sido exitoso.</li>
+								</ul>
+							</p>
 						</aside>
 					</section>
 				</section>
@@ -621,10 +635,10 @@ config.vm.provision :puppet, :module_path => "modules"
 						</code></pre>
 						<aside class="notes">
 							<p>
-								Vagrant proporciona la gestión de los entornos de desarrollo sobre máquinas virtuales, ligeras, sencillas y replicables. Existe un repositorio de imágenes de virtuales preparadas para Vagrant que se han de instalar la máquina del desarrollador con un simple comando.
+								Vagrant nos proporciona la gestión de los entornos de desarrollo sobre máquinas virtuales, ligeras, sencillas y replicables.
 							</p>
 							<p>
-								Se puede afirmar que Vagrant es la navaja suiza para las pruebas en este proyecto. A través de Vagrant se define el sistema operativo a instalar, la capacidad de la máquina y lo más importante: el provisionador, en nuestro caso Puppet y el módulo SidelabCode Stack.
+								Se puede afirmar que Vagrant es la navaja suiza para las pruebas en este proyecto. Se ha utilizado como herramienta de pruebas para la instalación y configuración de SCStack. Se define el sistema operativo a instalar, la capacidad de la máquina y lo más importante: el provisionador, en nuestro caso Puppet y el módulo SidelabCode Stack.
 							</p>
 						</aside>
 					</section>
@@ -645,15 +659,15 @@ config.vm.provision :puppet, :module_path => "modules"
 						<aside class="notes">
 
 							<p>
-								A partir de la definición de la metodología Iterativa e Incremental se trasladan los requerimientos de la misma como parte inicial del proyecto para plasmarlos dibujando el camino deseado a seguir.
+								A partir de la elección de la metodología Iterativa e Incremental se trasladan los requerimientos como parte inicial del proyecto para dibujar el camino deseado a seguir.
 							</p>
 
 							<p>
-								Se han incluido las herramientas necesarias dentro del proyecto SCStack además de su integración dentro del flujo de trabajo y su comunicación entre las mismas dentro del entorno SCStack. Unificando un proceso de desarrollo que aglutina a todos los componentes involucrados mediante la configuración y la rápida disponibilidad de las herramientas para el uso la forja creando un marco de trabajo.
+								Se han incluido las herramientas necesarias dentro del proyecto SCStack. Además su integración dentro del flujo de trabajo y la interoperabilidad entre las mismas dentro del entorno SCStack. Se ha unificando el proceso de desarrollo que aglutina a todos los componentes involucrados mediante la configuración y la accesibilidad de las herramientas dentro de la forja creando un marco de trabajo.
 							</p>
 
 							<p>
-								Acto seguido se traza el camino a seguir para introducir la metodología en el mismo proceso de desarrollo utilizando las cualidades de cada una de las herramientas. Se localizan y gestionan los recursos necesarios para crear el marco de trabajo Iterativo e Incremental.
+								Se traza el camino a seguir para introducir la metodología en el mismo proceso de desarrollo aprovechando las cualidades de cada una de las herramientas. Se localizan y gestionan los recursos necesarios para crear el marco de trabajo Iterativo e Incremental.
 							</p>
 
 							<p>
@@ -661,12 +675,11 @@ config.vm.provision :puppet, :module_path => "modules"
 							</p>
 
 							<p>
-								Por último se ha comprobado a través de casos reales el correcto funcionamiento de los requerimientos del proceso de desarrollo a través de SCStack.
+								Se ha comprobado a través de casos reales el correcto funcionamiento del proceso de desarrollo a través de SCStack. Con es el ejemplo de la instalación en la empresa TSCompany.
 							</p>
 							<p>
-								Además de dotar a la forja de un potente sistema de inicialización y configuración a través de Puppet, permitiendo futuras incorporaciones, actualizaciones o sustituciones de módulos que pueden aportar mejoras a la herramienta.
+								Por último, se ha dotado a la forja de un potente sistema de inicialización y configuración a través de Puppet, permitiendo la incorporación de futuras herramientas, actualizaciones de versiones o sustituciones de módulos que pueden aportar mejoras.
 							</p>
-
 						</aside>
 						
 						<p>
@@ -688,13 +701,13 @@ config.vm.provision :puppet, :module_path => "modules"
 
 						<aside class="notes">
 							<p>
-								Refactorización del código mejorando el rendimiento y la eficacia.
+								Refactorización del código mejorando el rendimiento, la eficacia y la facilidad de evolución.
 							</p>
 							<p>
 								Mover a la comunidad facilitando el acceso a la herramienta, la difusión y el uso. La barrera de entrada es baja debido a la facilidad para la puesta en marcha, el uso de herramientas conocidas FLOSS y la ayuda de la documentación. 
 							</p>
 							<p>
-								Con respecto a las funcionalidades y herramientas de SCStack, se ha de centralizar la instalación de los módulos, es decir dotar al usuario de una herramienta para que él mismo elija los componentes de SCStack que quiere instalar en su servidor.
+								Con respecto a las funcionalidades y herramientas de SCStack, se ha de centralizar la instalación de los módulos, es decir, dotar al usuario de una herramienta para que él mismo elija los componentes de SCStack que quiere instalar en su servidor.
 							</p>
 						</aside>
 					</section>
