@@ -148,7 +148,7 @@
 						<h3>Consciencia y constancia</h3>
 
 						<blockquote cite="George Santayana, The Life of Reason, Volume 1, 1905">
-							&ldquo;El progreso, lejos de consistir en el cambio, depende de la capacidad de retención. Cuando el cambio es absoluto no queda ningún ser para mejorar y ninguna dirección se ajusta para una posible mejora: y cuando la experiencia no se conserva, como entre los salvajes, la infancia es perpetua. <strong style="color: #e7ad52;" class="fragment roll-in">Aquellos que no pueden recordar el pasado están condenados a repetirlo</strong>.&ldquo;
+							&ldquo;El progreso, lejos de consistir en el cambio, depende de la capacidad de retención. Cuando el cambio es absoluto no queda ningún ser para mejorar y ninguna dirección se ajusta para una posible mejora: y cuando la experiencia no se conserva, como entre los salvajes, la infancia es perpetua. <strong style="color: #e7ad52;" class="fragment highlight-orange">Aquellos que no pueden recordar el pasado están condenados a repetirlo</strong>.&ldquo;
 							<p>George Santayana, The Life of Reason, Volume 1, 1905</p>
 						</blockquote>
 
@@ -157,10 +157,10 @@
 						</p>
 						<aside class="notes">
 							<p>
-								Nos quedamos con la última frase del texto de <em>George Santayana</em>: Aquellos que no pueden recordar el pasado están condenados a repetirlo.
+								En el texto de <em>George Santayana</em> destacamos la última frase: Aquellos que no pueden recordar el pasado están condenados a repetirlo.
 							</p>
 							<p>
-								Del que aplicado al desarrollo de software podemos extraer la siguiente afirmación:
+								Que aplicado al desarrollo de software podemos extraer la siguiente afirmación:
 							</p>
 							<p>
 								Debemos ser conscientes del estado del proceso de desarrollo de software y tener constancia de la evolución para aprender de lo vivido.
@@ -298,13 +298,14 @@
 								... la metodología Iterativa e Incremental.
 							</p>
 							<p>
-								Está compuesta por las metodologías: Iterativa e Incremental
+								Es la intersección de las metodologías: Iterativa e Incremental
 							</p>
 							<p>
-								Iteraciones: 
+								Por la parte Iterativa: Desarrollo de software basado en la repetición de un proceso establecido: análisis, desarrollo, pruebas y entrega.
 							</p>
-								Incrementos: En cada incremento se añade funcionalidad en la entrega
-								with each increment providing more functionality to the customers
+							<p>
+								Y en el apartado Incremental: Se caracteriza porque en cada entrega se añade una funcionalidad.
+							</p>
 							<p>
 								Utilizando la definición de Divide y Vencerás: para resolver un problema difícil, se divide en partes más simples, tantas veces como sea necesario para que la resolución de cada una de las partes se torne obvia.
 							</p>
@@ -322,14 +323,15 @@
 						</p>
 						<aside class="notes">
 							<p>
-								Este proceso de desarrollo cercano a las Metodologías Ágiles, como ellas tiene el mismo fin: la implicación, desarrollo, fiabilidad, confianza, aprendizaje, versatilidad, responsabilidad, comunicación con el usuario/cliente durante el proceso.
+								Este proceso de desarrollo cercano a las Metodologías Ágiles, como ellas, comparte los mismos fines:
+								la implicación, fiabilidad, aprendizaje, versatilidad y comunicación con el usuario/cliente.
 							</p>
 							<p>
-								... como refleja el imagen, sin entrar mucho en detalle: 
+								... como refleja el imagen, el marco de desarrollo se divide: 
 								<ul>
-									<li>desmenuzar los requisitos - Backlog</li>
-									<li>divido en ciclos cortos de desarrollo - Iteraciones</li>
-									<li>en pequeñas entregas de un producto - Incrementos</li>
+									<li>Localizar los requisitos - Lista de requisitos</li>
+									<li>Agruparlos en ciclos cortos de desarrollo - Iteraciones</li>
+									<li>Construir pequeñas entregas como resultado - Incrementos</li>
 								</ul>
 							</p>
 							<p>
@@ -346,7 +348,7 @@
 						
 						<aside class="notes">
 							<p>
-								Los procesos de desarrollo que se van presentar componen un ecosistema para la metodología Iterativa e Incremental,
+								Los procesos de desarrollo que se van a presentar componen un ecosistema en la metodología Iterativa e Incremental,
 							</p>
 							<p>
 								...actuando de catalizadores del desarrollo de software.
@@ -395,8 +397,9 @@
 								El Desarrollo por ramas ayuda a la creación de código de una forma ordenada y coordinada dentro de un grupo de trabajo. Se basa en la creación y la integración continua de nuevas funcionalidades o solventar problemas derivados de una manera eficiente, ágil y distribuida.
 							</p>
 							<p>
-								Dentro del proceso de desarrollo Iterativo e Incremental lo situamos en integración de las ramas de funcionalidades en la rama principal de desarrollo.
-
+								Dentro del proceso de desarrollo Iterativo e Incremental situamos en la rama principal de desarrollo la integración de las ramas de funcionalidades.
+							</p>
+							<p>
 								Es decir, cada iteración consta de un incremento en el que se han agrupado las funcionalidades a implementar, dando paso al...
 							</p>
 						</aside>
@@ -423,7 +426,7 @@
 						</p>
 						<aside class="notes">
 							<p>
-								El siguiente paso en el desarrollo Iterativo e Incremental es la entrega, donde entra el Proceso de Entrega y Despliegue Continuo.
+								La entrega es el siguiente paso en el desarrollo Iterativo e Incremental, donde entra el Proceso de Entrega y Despliegue Continuo.
 							</p>
 							<p>
 								Es el encargado de automatizar y mejorar el proceso de entregas y despliegues. Prepara la entrega de la iteración. Agiliza y mejora a cada iteración completada dentro del desarrollo del proyecto.
@@ -576,12 +579,20 @@
 						</p>
 
 						<p>
-							Podemos observar el ciclo de vida de la aplicación desde que:
+							Ejemplo del ciclo de vida de la aplicación:
 							<ul>
-								<li>Creación el proyecto desde la consola de administración, usuarios, permisos, roles, repositorio, </li>
-								<li>Usuario que accede al nuevo proyecto de Redmine en donde se describen y agrupan los requerimientos a publicar en la siguiente iteración,</li>
-								<li>Usuario encargado de la tarea accede al reposiorio git a través de eclipse, desarrolla, prueba, commit y un push a la rama definida,</li>
-								<li>Jenkins integra esa rama en la de desarrollo por las pruebas de integración y se encarga de hacer el despliegue del contenido si ha sido exitoso.</li>
+								<li>
+									El usuario crea el proyecto desde la consola de administración, donde se definen usuarios, permisos, roles y el repositorio,
+								</li>
+								<li>
+									El desarrollador accede al proyecto en Redmine. Donde se describen y agrupan los requerimientos a publicar en la iteración,
+								</li>
+								<li>
+									Descarga el reposiorio git a través de eclipse, desarrolla, prueba y sube los cambios a la rama definida,
+								</li>
+								<li>
+									Jenkins integra esa rama en la principal pasando por las pruebas de integración y se encarga de hacer el despliegue del contenido si ha sido exitoso.
+								</li>
 							</ul>
 						</p>
 					</aside>
@@ -617,7 +628,7 @@
 							</p>
 						</blockquote>
 						<p>
-							 Aplicado a la Ingeniería del Software el <em>Aprovisionamiento</em> nos provee los componentes necesarias para construir una solución.
+							 Abastecer, aplicado a la Ingeniería del Software el <em>Aprovisionamiento</em> nos provee los componentes necesarios para construir una solución.
 						</p>
 						<aside class="notes">
 							<p>
@@ -661,7 +672,7 @@ class { "scstack":
 								Puppet: es una herramienta Software Libre de aprovisionamiento desarrollada en Ruby.
 							</p>
 							<p>
-								Dentro SidelabCode Stack gestiona la infraestructura partiendo del aprovisionamiento y la configuración de las herramientas hasta la ejecución de órdenes para la instalación y configuración del entorno.
+								Dentro SidelabCode Stack, gestiona la infraestructura partiendo del aprovisionamiento y la configuración de las herramientas, hasta la ejecución de órdenes para la instalación y configuración del entorno.
 							</p>
 							<p>
 								Puppet es el encargado de orquestar la instalación y la comunicación en la forja SidelabCode Stack.
@@ -692,10 +703,10 @@ end
 						</code></pre>
 						<aside class="notes">
 							<p>
-								Vagrant nos proporciona la gestión de los entornos de desarrollo sobre máquinas virtuales, ligeras, sencillas y replicables.
+								En el ecosistema de SidelabCode Stack Vagrant se ha utilizado en el apartado de pruebas.
 							</p>
 							<p>
-								En el ecosistema de SidelabCode Stack Vagrant se ha utilizado en el apartado de pruebas.
+								Vagrant nos proporciona la gestión de los entornos de desarrollo sobre máquinas virtuales, ligeras, sencillas y replicables.
 							</p>
 							<p>
 								Facilitando el proceso de instalación y configuración de SCStack.
